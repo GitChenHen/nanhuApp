@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./lib/css/lib.css">
+    <link rel="stylesheet" href="./lib/css/index.css">
+ 
+    <title>南湖App测试</title>
+</head>
+
+<body>
+    <!-- 顶部标题开始 -->
+    <header>
+        <div class="container">
+            <div class="row" style="float: right;">
+                <div class=" col-lg-12 col-md-12 col-sm-12 username">
+                    <img src="/images/test_slices/小智.png" width="45px" height="45px" alt="" srcset="">
+                    <span>欢迎--木板&nbsp;&nbsp;<i class="glyphicon glyphicon-triangle-bottom"></i></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主内容 -->
+    <div class="container">
+             <!-- 左边框 -->
+        <div class="col-sm-12 col-md-5 col-lg-8 left-content">
+            <div class="up">
+                <img width="130px" src="/images/test_slices/建筑.png">
+                <p>每周三晚上20：00更新</p>
+                <img src="/images/test_slices/火箭.png" alt="" srcset="">
+            </div>
+            <div class="down">
+                <img class="i1" src="/images/test_slices/钱.png" alt="" srcset="">
+                <img class="i2 common" src="/images/test_slices/标题.png" alt="" srcset="">
+                <img class="i3 common" src="/images/test_slices/小智.png" alt="" srcset="">
+                <img class="i4" src="/images/test_slices/沙漠人.png" alt="" srcset="">
+            </div>
+
+            <!-- 视频区 -->
+            <p class="video-title">交易西游记：记录真实的人物</p>
+            <div class="video">
+                <video src="video/good.mp4" controls="controls" width="700px" height="300px" id="video_url">
+                </video>
+                <div class="nav">
+                    <img src="/images/test_slices/分享.png" alt="" srcset=""> 分享
+                    <img src="/images/share_icon/qqicon.png" alt="" width="30px" srcset="">
+                    <img src="/images/share_icon/weibo.png" alt="" width="30px" srcset="">
+                    <img src="/images/share_icon/weixinicon.png" width="30px" alt="" srcset="">
+                </div>
+            </div>
+            <hr>
+            <!-- 往期回顾 -->
+            <div class="backLook">
+                <div class="title">
+                    <div class="left">
+                        <img src="/images/test_slices/小标题装饰火箭.png" alt="" srcset="">
+                        往期回顾
+                        <img src="/images/test_slices/小标题右边.png" alt="" srcset="">
+                    </div>
+                    <div class="right">
+                        <a href="#">查看更多</a>
+                    </div>
+                </div>
+                <!-- 内容 -->
+                <div class="content">
+                    <div class="left">
+                        <a href="#" onclick="playVideo(0)">
+                            <img src="/images/test_slices/videoPic1.png" alt="" srcset="">
+                            <i class="glyphicon glyphicon-play-circle btn_play"></i>
+                        </a>
+                        <p>八周交易计划，你还在等什么呢</p>
+                        <p>2020-3-27</p>
+                    </div>
+                    <div class="mid">
+                        <a href="#" onclick="playVideo(1)">
+                            <img src="/images/test_slices/videoPic2.png" alt="" srcset="">
+                            <i class="glyphicon glyphicon-play-circle btn_play"></i>
+                        </a>
+                        <p>八周交易计划，你还在等什么呢</p>
+                        <p>2020-3-27</p>
+                    </div>
+                    <div class="right">
+                        <a href="#" onclick="playVideo(2)">
+                            <img src="/images/test_slices/videoPic3.png" alt="" srcset="">
+                            <i class="glyphicon glyphicon-play-circle btn_play"></i>
+                        </a>
+                        <p>八周交易计划，你还在等什么呢</p>
+                        <p>2020-3-27</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <!-- 留言区 -->
+            <div class="lyq">
+                <div class="title">
+                    <img src="/images/test_slices/小标题装饰火箭.png" alt="" srcset="">
+                    留言区
+                    <img src="/images/test_slices/小标题右边.png" alt="" srcset="">
+                </div>
+                <div class="header">
+                    <p> <i class="glyphicon glyphicon-envelope"></i></p>
+                    <p>交易简单来看，不外乎上涨下跌，赌博不外乎输赢，交易员是赌博吗?易简单来看，不外乎上涨下跌，赌博不外乎输赢，交易员是赌博吗?</p>
+                    <!-- 桥 -->
+                    <div class="q">
+                        <span class="lq">
+                            <img src="/images/test_slices/导言装饰.png" alt="" srcset="">
+                        </span>
+                        <span class="rq">
+                            <img src="/images/test_slices/导言装饰.png" alt="" srcset="">
+                        </span>
+                    </div>
+                </div>
+                <!-- 内容 -->
+                <div class="info">
+                    <div class="log-reg">
+                        <p><i class="glyphicon glyphicon-envelope"></i> 评论需要登录才可以</p>
+                        <p><span onclick="login()">登录</span>&nbsp; <span onclick="register()">注册</span></p>
+                    </div>
+                    <hr />
+                    <div class="comment">
+                        <p style="margin: 5px 0 0 15px;text-align: center;">------&nbsp;最新评论&nbsp;------</p>
+                        <div class="person">
+                            <div class="user" id="c_person_info">
+                                <div class="right" id="c_main">
+                                    <!-- 评论区 -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右边框 -->
+        <div class="col-sm-12 col-md-6 col-lg-3 right-content ">
+            <!-- title -->
+            <div class="title">
+                交易员人物介绍
+            </div>
+            <!-- person -->
+            <div class="person">
+                <img src="/images/test_slices/小智.png" alt="" srcset="">
+                <p>林则徐（1785年）&nbsp; 福建清朝时期的政治家、思想家和诗人，因其主张严禁鸦片，在中国有“英雄之称"。</p>
+            </div>
+            <!-- son title -->
+            <div class="title_son">
+                本集话题讨论
+            </div>
+            <p>交易简单来看，不外乎上涨下跌，赌博不外乎输赢，交易员是赌博吗?</p>
+            <!-- 投票 -->
+            <div class="tp">
+                <div class="left-tp">
+                    <img src="/images/test_slices/左边.png" alt="" srcset="">
+                    <p>我是选项一</p>
+                    <P class="tp-num">已投1209票</P>
+                </div>
+                <div class="right-tp">
+                    <img src="/images/test_slices/右边.png" alt="" srcset="">
+                    <P class="tp-num">已投1209票</P>
+                </div>
+            </div>
+            <!-- 参与投票标题 -->
+            <div class="tp_titlr">
+                <img src="/images/test_slices/Bitmap.png" alt="" srcset="">
+            </div>
+            <!-- 线下沙龙 -->
+            <div class="sl">
+                线下沙龙招募活动
+            </div>
+            <p>交易简单来看，不外乎上涨下跌，赌博不外乎输赢，交易员是赌博吗?交易简单来看，不外乎上涨下跌，赌博不外乎输赢，交易员是赌博吗?</p>
+            <!-- 活动详情 -->
+            <div class="action">
+                活动详情
+            </div>
+            <p>加入我们大家庭吧</p>
+            <div class="code">
+                <img src="/images/test_slices/二维码.png" alt="" srcset="">
+                <p>微信号：jin_10_domi</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/lib/js/utils.js"></script>
+<script src="/lib/js/jquery.v1.12.4.js"></script>
+<script>
+    var c_main = $("#c_main");
+    var strObj = "";
+
+    commentObj.forEach((item, index) => {
+        //调试
+        // console.log(item) 
+
+        strObj =
+            '<div class="left"><i class="glyphicon glyphicon-comment" onclick="good(0)"></i><span style="color:red;margin:-10px 0 0 10px" id="number">(' +
+            item.c_num + ')条点赞</span></div><div class="right">  <img width="50px;" src="' + item.c_userIcon +
+            '" alt="头像">';
+        strObj += '<span class="username">' + item.c_userName + '</span>';
+        strObj += ' <div class="comInfo"><text> ' + item.c_Info +
+            '</text><text onclick="reback()"><i class="glyphicon glyphicon-envelope"></i>&nbsp;&nbsp;回复</text> </div></div>';
+
+        c_main.append(strObj);
+    });
+    // 触发切换视频函数
+    function playVideo(index) {
+        var video_url = $("#video_url");
+        var url = "";
+        if (index == 0) {
+            url = videoObj[index].url;
+            video_url[0].src = url;
+        }
+        if (index == 1) {
+            url = videoObj[index].url;
+            video_url[0].src = url;
+        }
+        if (index == 2) {
+            url = videoObj[index].url;
+            video_url[0].src = url;
+
+            //调试输出路径
+            // console.log(video_url[0].src);
+            // console.log(url);
+        }
+    }
+// 判断浏览器滚动条滚动了多少
+    $(document).ready(function(){
+        $(document).scroll(function(){
+            var res = $(this).scrollTop();
+            console.log("滚动了"+res+"px");
+
+            // 右侧栏的高度
+            var r_height = $(".right-content").outerHeight(true);
+            if(res>=r_height){
+                $(".right-content").addClass('fix');
+            }else{
+                $(".right-content").removeClass("fix");
+            }
+        })
+    })
+    
+
+    console.log($(".right-content").height());
+    console.log($(".right-content").innerHeight());
+    console.log($(".right-content").outerHeight());
+    console.log($(".right-content").outerHeight(true));
+</script>

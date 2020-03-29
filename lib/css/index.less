@@ -1,0 +1,413 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+// 头部样式
+header {
+  height: 50px;
+  margin:10px auto;
+  .username{
+   float: right;
+   img{
+    position: relative;
+    margin-right: 100px;
+   }
+   span{
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    right: 10px;
+   }
+  } 
+  border-bottom: 1px solid rgb(170, 167, 167);
+
+  }
+
+// 左边框样式
+.left-content {
+
+  .up {
+    position: relative;
+    margin: 30px 0 0 30px;
+    display: flex;
+    p {
+      
+      font-size: 20px;
+      margin: 50px 20px 0;
+    }
+  }
+
+  .down {
+    position: relative;
+    display: flex;
+    .i1 {
+      margin: 0 10px 0 5px;
+    }
+  
+    .i2 {
+      position: absolute;
+      top: -10px;
+      z-index: 999;
+      left: 150px;
+      width: 320px;
+    }
+  
+    .i3 {
+      position: absolute;
+      z-index: 888;
+      width: 160px;
+      left: 450px;
+      top: -90px;
+    }
+  
+    .i4 {
+      position: absolute;
+      width: 180px;
+      right: 20px;
+      top: -30px;
+    }
+  }
+
+
+
+  // 视频样式
+  .video-title {
+    margin-top: 20px;
+    font-size: 18px;
+    color: red;
+    margin: 30px 10px 10px 40px;
+  }
+
+  .video {
+    position: relative;
+    text-align: center;
+
+    video {
+      border: 10px solid rgb(231, 81, 81);
+      border-radius: 10px;
+    }
+
+    .nav {
+      position: absolute;
+      width: 200px;
+      height: 35px;
+      padding: 5px 0 0 5px;
+      background-color: rgb(231, 81, 81);
+      top: -30px;
+      right: 30px;
+      border-radius: 5px;
+    }
+  }
+
+  // 往后回顾
+  .backLook {
+    width: 100%;
+    margin: 40px 0 20px 10px;
+    .title{
+      display: flex;
+      margin: 0 30px 0px 10px;
+      justify-content: space-between;
+    
+    }
+    
+    .content {
+      display: flex;
+      padding: 10px;
+      div {
+        position: relative;
+        width: 33.3%;
+        padding: 10px;
+        .btn_play{
+          position: absolute;
+          margin: 30% -50%;
+          z-index: 999;
+        }
+        img {
+          width: 100%;
+        }
+
+        p {
+          font-size: 14px;
+          margin: 5px;
+        }
+      }
+    }
+  }
+     // 留言区
+     .lyq{
+      width: 100%;
+      margin: 40px 0 20px 10px;
+      .title{
+        margin: 0 30px 0px 0px;
+      
+      }
+      .header{
+        position: relative;
+        display: flex;
+        margin: 15px 0;
+        padding: 10px 10px 10px 50px;
+        border-radius: 5px;
+        border: 1px solid rgb(158, 157, 157);
+        p{
+          font-size: 12px;
+          margin: 0 80px 0 20px;
+        }
+        p:first-child{
+          margin: 10px 0 0 50px ;
+        }
+        // 桥
+        .lq{
+          position: absolute;
+          top: 40px;
+          left: 60px;
+        }
+        .rq{
+          position: absolute;
+          top: 40px;
+          right: 60px;
+        }
+      }
+      .info{
+        border-radius: 5px;
+        border: 1px solid rgb(158, 157, 157);
+        .log-reg{
+          margin:30px 20px;
+          padding: 20px;
+          border-radius: 5px;
+          border: 1px solid rgb(158, 157, 157);
+          display: flex;
+          justify-content: space-between;
+          p{
+            text-align: center;
+            color: #ccc;
+            i{
+              margin-right: 15px;
+            }
+          }
+          span{
+            display: inline-block;
+            width: 70px;
+            color: rgb(252, 249, 249);
+            border-radius: 10px;
+            border: 1px solid #ccc;
+          }
+          span:first-child{
+            background-color: rgb(136, 245, 121);
+          }
+          span:last-child{
+            background-color: rgb(236, 105, 101);
+          }
+        }
+        .person{
+          .user{
+            display: flex;
+            margin: 20px;
+            .left{
+              i{
+                font-size: 30px;
+              }              
+              margin: 25px 0 0 0;
+            }
+            .right{
+              width: 100%;
+              border-bottom: 1px solid #ccc;
+              margin-left: 20px;
+              .username{
+                font-family: "微软雅黑";
+                font-style: oblique;
+              }
+              .comInfo{
+                display: flex;
+                justify-content: space-between;
+                margin: 10px;
+                font-size: 13px;
+                text:last-child{
+                  color: #ccc;
+                }
+              }
+            }
+          }
+          
+          
+        }
+      }
+     
+    } 
+
+}
+
+// 右边框样式
+.right-content {
+  padding: 10px;
+  margin: 30px 0px 0 30px;
+  border: 1px solid rgb(158, 157, 157);
+  border-radius: 10px;
+
+  .title {
+    position: absolute;
+    top: -15px;
+    left: 65px;
+    width: 50%;
+    font-size: 18px;
+    border: 1px solid red;
+    border-radius: 10px;
+    text-align: center;
+    background-color: red;
+  }
+
+  .person {
+    display: flex;
+    margin: 40px 5px 0;
+
+    img {
+      width: 40%;
+    }
+
+    p {
+      margin-left: 10px;
+    }
+  }
+
+  .title_son {
+    margin: 30px 0 20px;
+    font-size: 18px;
+    border: 1px solid red;
+    border-radius: 10px;
+    text-align: center;
+    background-color: red;
+  }
+
+  .tp {
+    display: flex;
+    margin: 20px 5px 0;
+
+    .left-tp {
+      width: 50%;
+      border-radius: 5px;
+      padding: 10px;
+      margin-right: 5px;
+      border: 1px solid rgb(226, 223, 223);
+
+      img {
+        width: 100%;
+      }
+
+      p {
+        text-align: center;
+        margin: 10px 0 0;
+      }
+
+    }
+
+    .right-tp {
+      img {
+        width: 100%;
+      }
+
+      width: 50%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid rgb(226, 223, 223);
+
+      p {
+        text-align: center;
+        margin-top: 32px;
+      }
+    }
+
+  }
+
+  // 参与投票标题
+  .tp_titlr {
+    margin: 20px 0 20px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  // 沙龙
+  .sl {
+    margin: 30px 0 20px;
+    font-size: 18px;
+    border: 1px solid red;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(148, 143, 143);
+  }
+
+  // 活动详情
+  .action {
+    width: 120px;
+    margin: 20px auto;
+    font-size: 18px;
+    border: 1px solid red;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(250, 74, 74);
+  }
+
+  // 二维码
+  .code {
+    display: flex;
+
+    img {
+      width: 40%;
+      height: 40%;
+    }
+
+    p {
+      margin: 30px 5px 0;
+    }
+  }
+
+}
+
+// 在页面滚动下去超过右侧栏时，就固定住右侧栏。
+//在固定后，右侧栏自身有一个最大高度，
+//但当页面高度缩小到比右侧栏最大高度小的时候，
+//就要让该侧栏高度自适应的缩小，用css实现(js判断实时高度)。
+.fix{
+  position: fixed;
+  right: 20px;
+  top: 0px;  
+  z-index: 999;
+  @media (min-width :400px) and (max-width :500px){
+    width: 200px;    
+    }
+  @media (min-width :568px) and (max-width :868px){
+  width: 300px;    
+  background-color: rgb(250, 244, 244); 
+  }
+  @media (min-width :868px) and (max-width :992px){
+    width: 600px;   
+    background-color: rgb(255, 250, 250); 
+    }
+}  
+
+// 动画样式
+@keyframes i2_translatex {
+  from{
+    transform: translateX(-800px)
+  }to{
+    transform: translateX(50px)
+  }
+}
+
+@keyframes i3_translatex {
+  from{
+    transform: translateX(800px)
+  }to{
+    transform: translateX(50px)
+  }
+}
+
+.container .down .i2{
+  animation: i2_translatex 1s linear;  //infinite循环
+}
+.container .down .i3{
+  animation: i3_translatex 1s linear;
+}
